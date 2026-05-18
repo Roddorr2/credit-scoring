@@ -1,0 +1,5 @@
+Modelo,AUC-ROC,Recall,Precisión,F1-Score,Accuracy,modelo_base,umbral
+Regresión Logística (umbral=0.69),0.8055,0.4673,0.3479,0.3989,0.9059,Regresión Logística,0.6899999999999997
+Árbol de Decisión (umbral=0.36),0.83,0.4269,0.3912,0.4083,0.9173,Árbol de Decisión,0.3599999999999999
+Random Forest (umbral=0.49),0.8513,0.4539,0.3722,0.409,0.9123,Random Forest,0.48999999999999977
+XGBoost (umbral=0.36),0.8449,0.4414,0.3614,0.3974,0.9105,XGBoost,0.3599999999999999

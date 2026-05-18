@@ -1,0 +1,21 @@
+{
+  "modelo": "Random Forest",
+  "archivo": "random_forest_ganador.pkl",
+  "umbral_optimo": 0.49,
+  "auc_roc": 0.8513,
+  "recall": 0.4539,
+  "f1_score": 0.409,
+  "features": [
+    "RevolvingUtilizationOfUnsecuredLines",
+    "NumberOfTimes90DaysLate",
+    "NumberOfTime30-59DaysPastDueNotWorse",
+    "age",
+    "NumberOfOpenCreditLinesAndLoans",
+    "MonthlyIncome",
+    "DebtRatio",
+    "NumberRealEstateLoansOrLines",
+    "NumberOfDependents"
+  ],
+  "target": "SeriousDlqin2yrs",
+  "seed": 42
+}
