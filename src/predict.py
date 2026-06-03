@@ -60,7 +60,7 @@ def generar_predicciones(ruta_input: Path, ruta_output: Path):
         y_real = df[TARGET].values
         X = df[features]
     else:
-        y_real = True
+        y_real = None
         X = df[features]
     
     probs = modelo.predict_proba(X)[:, 1]
@@ -87,7 +87,6 @@ def generar_predicciones(ruta_input: Path, ruta_output: Path):
         'NumberOfOpenCreditLinesAndLoans'      : 'Líneas de Crédito',
         'NumberOfTimes90DaysLate'              : 'Atrasos +90 días',
         'NumberRealEstateLoansOrLines'         : 'Préstamos Inmobiliarios',
-        'NumberOfTime60-89DaysPastDueNotWorse' : 'Atrasos 60-89 días',
         'NumberOfDependents'                   : 'Dependientes',
         'prob_default'                         : 'Probabilidad Default',
         'clasificacion'                        : 'Clasificación',

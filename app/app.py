@@ -74,10 +74,6 @@ with st.sidebar:
         'Préstamos inmobiliarios',
         min_value=0, max_value=20, value=1
     )
-    atrasos_60_89 = st.number_input(
-        'Atrasos 60–89 días (últimos 2 años)',
-        min_value=0, max_value=20, value=0
-    )
     dependientes = st.number_input(
         'Número de dependientes',
         min_value=0, max_value=20, value=0
@@ -94,7 +90,6 @@ datos_cliente = {
     'NumberOfOpenCreditLinesAndLoans'       : lineas_credito,
     'NumberOfTimes90DaysLate'               : atrasos_90,
     'NumberRealEstateLoansOrLines'          : prestamos_inmuebles,
-    'NumberOfTime60-89DaysPastDueNotWorse'  : atrasos_60_89,
     'NumberOfDependents'                    : dependientes,
 }
 
