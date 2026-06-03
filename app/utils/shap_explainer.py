@@ -80,7 +80,7 @@ def generar_waterfall(datos_cliente: dict, prob: float) -> plt.Figure:
         feature_names = FEATURES
     )
 
-    fig, ax = plt.subplots(figsize=(9, 5))
+    fig, ax = plt.subplots(figsize=(11, 7))
     shap.plots.waterfall(explanation, show=False)
     plt.title(
         f'Explicación SHAP — P(default) = {prob:.2%}',
