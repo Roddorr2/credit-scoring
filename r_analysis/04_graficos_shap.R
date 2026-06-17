@@ -110,7 +110,7 @@ p_importancia <- ggplot(importancia,
   geom_vline(xintercept = 0, color = "gray40", linewidth = 0.5) +
   scale_fill_manual(values = c("Aumenta riesgo" = COL_MOROSO,
                                "Reduce riesgo"  = COL_NO_MOROSO)) +
-  scale_y_continuous(limits = c(-0.25, 0.45),
+  scale_y_continuous(limits = c(-0.45, 0.65),
                      labels = function(x) sprintf("%.2f", x)) +
   labs(
     title    = "Importancia de variables — correlación con P(default)",
